@@ -25,3 +25,6 @@ class Test_Guru:
         self.driver.find_element(by=By.NAME, value=Guru_Locators().password_input_box).send_keys(Guru_Data().password)
         self.driver.find_element(by=By.XPATH, value=Guru_Locators().submit_button).click()
         print("The user is logged in successfully")
+
+        while (True):
+            pass
